@@ -36,6 +36,7 @@
       position: relative;
       z-index: 1;
       max-width: 600px;
+      width: 100%;
     }
 
     .logo {
@@ -58,8 +59,15 @@
       margin-bottom: 30px;
     }
 
+    .tagline {
+      color: #0b500b;
+      font-weight: 600;
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
     .contact-info {
-        margin-top: 50px;
+      margin-top: 40px;
       font-size: 1em;
       background: rgba(255, 255, 255, 0.2);
       padding: 10px;
@@ -79,6 +87,40 @@
       color: #ccc;
       font-size: 0.9em;
     }
+
+    /* 📱 Mobile responsiveness */
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+        justify-content: flex-start;
+      }
+
+      .logo {
+        width: 90px;
+        padding: 8px;
+        margin-top: 40px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 1em;
+        margin-bottom: 20px;
+      }
+
+      .contact-info {
+        font-size: 0.95em;
+        margin-top: 30px;
+      }
+
+      footer {
+        font-size: 0.8em;
+        position: relative;
+        margin-top: 40px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -87,16 +129,16 @@
   <div class="content">
     <img src="Images/Logo.png" alt="IndiRoot Exims Logo" class="logo" />
     <h1>IndiRoot Exims</h1>
-    <p style="color:#0b500b; font-weight: 600; font-size: small !important ;">DELIVERING INDIA'S ROOTS TO GLOBAL DESTINATION</p>
+    <p class="tagline">DELIVERING INDIA'S ROOTS TO GLOBAL DESTINATION</p>
     <p>We're crafting something meaningful. Our website will be live soon.</p>
 
     <div class="contact-info">
-        <h3 style="text-align: center;">Contact Us</h3>
-     <p>
-    📧 - <a href="mailto:info@indirootexims.com">info@indirootexims.com</a>
-    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    📞 - +91 8866402765
-  </p>
+      <h3 style="text-align: center;">Contact Us</h3>
+      <p>
+        📧 - <a href="mailto:info@indirootexims.com">info@indirootexims.com</a>
+        &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        📞 - +91 8866402765
+      </p>
     </div>
   </div>
 
